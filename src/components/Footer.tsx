@@ -13,13 +13,13 @@ export const Footer: FunctionComponent = () => {
         <div className="text-sm text-muted-foreground">
           © {config.blog.copyright} {new Date().getFullYear()}
         </div>
-        <div className="text-xs text-muted-foreground hidden lg:block">
+{/*         <div className="text-xs text-muted-foreground hidden lg:block">
           <Link
             href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
           >
             Blog powered by wisp
           </Link>
-        </div>
+        </div> */}
         <div>
           <Link href="/rss">
             <Button variant="ghost" className="p-2">
@@ -29,13 +29,13 @@ export const Footer: FunctionComponent = () => {
           <DarkModeToggle />
         </div>
       </div>
-      <div className="text-xs text-muted-foreground lg:hidden">
+{/*       <div className="text-xs text-muted-foreground lg:hidden">
         <Link
           href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
         >
           Blog powered by wisp
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };
